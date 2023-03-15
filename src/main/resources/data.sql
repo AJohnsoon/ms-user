@@ -1,0 +1,26 @@
+CREATE TABLE TB_USER(
+        ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+        NAME VARCHAR(150),
+        EMAIL VARCHAR(150),
+        PASSWORD VARCHAR(255)
+);
+
+CREATE TABLE TB_ROLE(
+        ID INTEGER PRIMARY KEY AUTO_INCREMENT,
+        ROLE_NAME VARCHAR(150)
+);
+
+CREATE TABLE TB_USER_ROLE(
+        USER_ID VARCHAR(150),
+        ROLE_ID VARCHAR(150)
+);
+
+INSERT INTO TB_USER (name, email, password) VALUES ('Nina Brown', 'nina@gmail.com', '$2a$10$KEAHhPkSTrrVfH1PJA421.XjbQntE2Oyi4hztEtTsDQpukw8UpNV2');
+INSERT INTO TB_USER (name, email, password) VALUES ('Leila Red', 'leila@gmail.com', '$2a$10$34xcPvnq4.JUzCfbxTiaV.dSLi1/jeoP/yLT0Xp90KawqL9I0JAle');
+
+INSERT INTO TB_ROLE (role_name) VALUES ('ROLE_OPERATOR');
+INSERT INTO TB_ROLE (role_name) VALUES ('ROLE_ADMIN');
+
+INSERT INTO TB_USER_ROLE (user_id, role_id) VALUES (1,1);
+INSERT INTO TB_USER_ROLE (user_id, role_id) VALUES (2,1);
+INSERT INTO TB_USER_ROLE (user_id, role_id) VALUES (2,2);
