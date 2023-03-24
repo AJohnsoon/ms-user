@@ -15,7 +15,7 @@ CREATE TABLE TB_USER_ROLE(
         ROLE_ID VARCHAR(150)
 );
 
-INSERT INTO TB_USER (name, email, password) VALUES ('Nina Brown', 'nina@gmail.com', '$2a$10$KEAHhPkSTrrVfH1PJA421.XjbQntE2Oyi4hztEtTsDQpukw8UpNV2');
+INSERT INTO TB_USER (name, email, password) VALUES ('Nina Brown', 'nina@gmail.com', '$2a$10$JthRLH2iz7YM9N9WvVNgN.84hVnlHXpPa1KSS3dd2.7FwoskGGYgK');
 INSERT INTO TB_USER (name, email, password) VALUES ('Leila Red', 'leila@gmail.com', '$2a$10$34xcPvnq4.JUzCfbxTiaV.dSLi1/jeoP/yLT0Xp90KawqL9I0JAle');
 
 INSERT INTO TB_ROLE (role_name) VALUES ('ROLE_OPERATOR');
