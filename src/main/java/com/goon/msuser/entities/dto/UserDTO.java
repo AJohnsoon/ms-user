@@ -4,7 +4,6 @@ import com.goon.msuser.entities.Role;
 import com.goon.msuser.entities.User;
 
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 public class UserDTO {

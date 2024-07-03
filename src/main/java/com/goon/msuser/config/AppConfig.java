@@ -1,4 +1,4 @@
-package com.goon.msuser;
+package com.goon.msuser.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
